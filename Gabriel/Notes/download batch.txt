@@ -1,0 +1,20 @@
+For ($i=48; $i -le 69){
+(new-object System.Net.WebClient).DownloadFile('https://csr.lanl.gov/data-fence/1624994746/Lgiy3VgpLJRear8jR4JK-AZB2OU=/unified-host-network-dataset-2017/netflow/netflow_day-$i.bz2','G:\Project_Data\netflow_day-$i.bz2')
+}
+
+For ($i=48; $i -le 69;$i++){
+"10 * $i = " + (10 * $i)
+}
+
+For ($i=48; $i -le 69;$i++){
+"10 * $i = " + (10 * $i)
+}
+
+wget -c –directory-prefix=G:\Project_Data https://static.wikia.nocookie.net/fireemblem/images/0/03/Cordelia_%28FE13_Artwork%29.png
+
+curl.exe --output cordelia.png --url https://static.wikia.nocookie.net/fireemblem/images/0/03/Cordelia_%28FE13_Artwork%29.png
+
+
+For ($i=48; $i -le 69;$i++){
+curl.exe --output netflow_day-$i.bz2 --url https://csr.lanl.gov/data-fence/1624994746/Lgiy3VgpLJRear8jR4JK-AZB2OU=/unified-host-network-dataset-2017/netflow/netflow_day-$i.bz2
+}
