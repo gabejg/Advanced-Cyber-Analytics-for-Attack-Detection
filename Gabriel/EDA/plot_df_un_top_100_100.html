@@ -1,0 +1,123 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 500px;
+            height: 500px;
+            background-color: #ffffff;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+        #config {
+            float: left;
+            width: 400px;
+            height: 600px;
+        }
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<div id = "config"></div>
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"id": "ActiveDirectory$", "label": "ActiveDirectory$", "shape": "dot", "size": 10}, {"id": "ActiveDirectory", "label": "ActiveDirectory", "shape": "dot", "size": 10}, {"id": "Comp380437$", "label": "Comp380437$", "shape": "dot", "size": 10}, {"id": "Comp380437", "label": "Comp380437", "shape": "dot", "size": 10}, {"id": "Scanner", "label": "Scanner", "shape": "dot", "size": 10}, {"id": "Comp547538", "label": "Comp547538", "shape": "dot", "size": 10}, {"id": "Comp373203", "label": "Comp373203", "shape": "dot", "size": 10}, {"id": "Comp092787", "label": "Comp092787", "shape": "dot", "size": 10}, {"id": "Comp343469", "label": "Comp343469", "shape": "dot", "size": 10}, {"id": "Comp363531", "label": "Comp363531", "shape": "dot", "size": 10}, {"id": "Comp335697", "label": "Comp335697", "shape": "dot", "size": 10}, {"id": "Comp770200", "label": "Comp770200", "shape": "dot", "size": 10}, {"id": "Comp828729", "label": "Comp828729", "shape": "dot", "size": 10}, {"id": "Comp247594", "label": "Comp247594", "shape": "dot", "size": 10}, {"id": "Comp026764", "label": "Comp026764", "shape": "dot", "size": 10}, {"id": "Comp712916", "label": "Comp712916", "shape": "dot", "size": 10}, {"id": "Comp763248", "label": "Comp763248", "shape": "dot", "size": 10}, {"id": "Comp393623", "label": "Comp393623", "shape": "dot", "size": 10}, {"id": "Comp616708", "label": "Comp616708", "shape": "dot", "size": 10}, {"id": "Comp065123", "label": "Comp065123", "shape": "dot", "size": 10}, {"id": "Comp300961", "label": "Comp300961", "shape": "dot", "size": 10}, {"id": "Comp675476", "label": "Comp675476", "shape": "dot", "size": 10}, {"id": "Comp111330", "label": "Comp111330", "shape": "dot", "size": 10}, {"id": "Comp184217", "label": "Comp184217", "shape": "dot", "size": 10}, {"id": "Comp894088", "label": "Comp894088", "shape": "dot", "size": 10}, {"id": "Comp531828", "label": "Comp531828", "shape": "dot", "size": 10}, {"id": "Comp013303", "label": "Comp013303", "shape": "dot", "size": 10}, {"id": "Comp035876", "label": "Comp035876", "shape": "dot", "size": 10}, {"id": "Comp975290", "label": "Comp975290", "shape": "dot", "size": 10}, {"id": "Comp050867", "label": "Comp050867", "shape": "dot", "size": 10}, {"id": "Comp185517", "label": "Comp185517", "shape": "dot", "size": 10}, {"id": "Comp328892", "label": "Comp328892", "shape": "dot", "size": 10}, {"id": "Comp881419", "label": "Comp881419", "shape": "dot", "size": 10}, {"id": "Comp546437", "label": "Comp546437", "shape": "dot", "size": 10}, {"id": "Comp743956", "label": "Comp743956", "shape": "dot", "size": 10}, {"id": "Comp948451$", "label": "Comp948451$", "shape": "dot", "size": 10}, {"id": "Comp948451", "label": "Comp948451", "shape": "dot", "size": 10}, {"id": "Comp016588$", "label": "Comp016588$", "shape": "dot", "size": 10}, {"id": "Comp016588", "label": "Comp016588", "shape": "dot", "size": 10}, {"id": "Comp674825$", "label": "Comp674825$", "shape": "dot", "size": 10}, {"id": "Comp674825", "label": "Comp674825", "shape": "dot", "size": 10}, {"id": "EnterpriseAppServer$", "label": "EnterpriseAppServer$", "shape": "dot", "size": 10}, {"id": "EnterpriseAppServer", "label": "EnterpriseAppServer", "shape": "dot", "size": 10}, {"id": "User703614", "label": "User703614", "shape": "dot", "size": 10}, {"id": "Comp094128$", "label": "Comp094128$", "shape": "dot", "size": 10}, {"id": "Comp094128", "label": "Comp094128", "shape": "dot", "size": 10}, {"id": "User046687", "label": "User046687", "shape": "dot", "size": 10}, {"id": "Comp217088$", "label": "Comp217088$", "shape": "dot", "size": 10}, {"id": "Comp217088", "label": "Comp217088", "shape": "dot", "size": 10}, {"id": "Comp357095$", "label": "Comp357095$", "shape": "dot", "size": 10}, {"id": "Comp357095", "label": "Comp357095", "shape": "dot", "size": 10}, {"id": "Comp027709$", "label": "Comp027709$", "shape": "dot", "size": 10}, {"id": "Comp027709", "label": "Comp027709", "shape": "dot", "size": 10}, {"id": "Comp819652$", "label": "Comp819652$", "shape": "dot", "size": 10}, {"id": "Comp819652", "label": "Comp819652", "shape": "dot", "size": 10}, {"id": "Comp218986$", "label": "Comp218986$", "shape": "dot", "size": 10}, {"id": "Comp218986", "label": "Comp218986", "shape": "dot", "size": 10}, {"id": "User181140", "label": "User181140", "shape": "dot", "size": 10}, {"id": "Comp440193$", "label": "Comp440193$", "shape": "dot", "size": 10}, {"id": "Comp440193", "label": "Comp440193", "shape": "dot", "size": 10}, {"id": "Comp713504$", "label": "Comp713504$", "shape": "dot", "size": 10}, {"id": "Comp713504", "label": "Comp713504", "shape": "dot", "size": 10}, {"id": "User677416", "label": "User677416", "shape": "dot", "size": 10}, {"id": "Comp621735", "label": "Comp621735", "shape": "dot", "size": 10}, {"id": "Comp621735$", "label": "Comp621735$", "shape": "dot", "size": 10}, {"id": "Administrator", "label": "Administrator", "shape": "dot", "size": 10}, {"id": "Comp402465", "label": "Comp402465", "shape": "dot", "size": 10}, {"id": "Comp925126", "label": "Comp925126", "shape": "dot", "size": 10}, {"id": "Comp395935", "label": "Comp395935", "shape": "dot", "size": 10}, {"id": "Comp972924", "label": "Comp972924", "shape": "dot", "size": 10}, {"id": "Comp903988$", "label": "Comp903988$", "shape": "dot", "size": 10}, {"id": "Comp903988", "label": "Comp903988", "shape": "dot", "size": 10}, {"id": "Comp897367$", "label": "Comp897367$", "shape": "dot", "size": 10}, {"id": "Comp897367", "label": "Comp897367", "shape": "dot", "size": 10}, {"id": "Comp287981$", "label": "Comp287981$", "shape": "dot", "size": 10}, {"id": "Comp287981", "label": "Comp287981", "shape": "dot", "size": 10}, {"id": "Comp943585$", "label": "Comp943585$", "shape": "dot", "size": 10}, {"id": "Comp943585", "label": "Comp943585", "shape": "dot", "size": 10}, {"id": "Comp755918$", "label": "Comp755918$", "shape": "dot", "size": 10}, {"id": "Comp755918", "label": "Comp755918", "shape": "dot", "size": 10}, {"id": "Comp304440$", "label": "Comp304440$", "shape": "dot", "size": 10}, {"id": "Comp304440", "label": "Comp304440", "shape": "dot", "size": 10}, {"id": "Comp747460$", "label": "Comp747460$", "shape": "dot", "size": 10}, {"id": "Comp747460", "label": "Comp747460", "shape": "dot", "size": 10}, {"id": "User180900", "label": "User180900", "shape": "dot", "size": 10}, {"id": "Comp662721", "label": "Comp662721", "shape": "dot", "size": 10}, {"id": "User686873", "label": "User686873", "shape": "dot", "size": 10}, {"id": "Comp355169", "label": "Comp355169", "shape": "dot", "size": 10}, {"id": "User765669", "label": "User765669", "shape": "dot", "size": 10}, {"id": "Comp277495", "label": "Comp277495", "shape": "dot", "size": 10}, {"id": "Comp708646$", "label": "Comp708646$", "shape": "dot", "size": 10}, {"id": "Comp708646", "label": "Comp708646", "shape": "dot", "size": 10}, {"id": "User414014", "label": "User414014", "shape": "dot", "size": 10}, {"id": "Comp496677", "label": "Comp496677", "shape": "dot", "size": 10}, {"id": "Comp769474$", "label": "Comp769474$", "shape": "dot", "size": 10}, {"id": "Comp769474", "label": "Comp769474", "shape": "dot", "size": 10}, {"id": "Comp023513$", "label": "Comp023513$", "shape": "dot", "size": 10}, {"id": "Comp023513", "label": "Comp023513", "shape": "dot", "size": 10}, {"id": "Comp358834$", "label": "Comp358834$", "shape": "dot", "size": 10}, {"id": "Comp358834", "label": "Comp358834", "shape": "dot", "size": 10}, {"id": "Comp285326$", "label": "Comp285326$", "shape": "dot", "size": 10}, {"id": "Comp285326", "label": "Comp285326", "shape": "dot", "size": 10}, {"id": "User924479", "label": "User924479", "shape": "dot", "size": 10}, {"id": "Comp536810", "label": "Comp536810", "shape": "dot", "size": 10}, {"id": "Comp615189$", "label": "Comp615189$", "shape": "dot", "size": 10}, {"id": "Comp615189", "label": "Comp615189", "shape": "dot", "size": 10}, {"id": "User684358", "label": "User684358", "shape": "dot", "size": 10}, {"id": "Comp559861", "label": "Comp559861", "shape": "dot", "size": 10}, {"id": "Comp201491", "label": "Comp201491", "shape": "dot", "size": 10}, {"id": "Comp503376$", "label": "Comp503376$", "shape": "dot", "size": 10}, {"id": "Comp503376", "label": "Comp503376", "shape": "dot", "size": 10}, {"id": "User011772", "label": "User011772", "shape": "dot", "size": 10}, {"id": "Comp055001", "label": "Comp055001", "shape": "dot", "size": 10}, {"id": "Comp633715$", "label": "Comp633715$", "shape": "dot", "size": 10}, {"id": "Comp633715", "label": "Comp633715", "shape": "dot", "size": 10}, {"id": "Comp558084$", "label": "Comp558084$", "shape": "dot", "size": 10}, {"id": "Comp558084", "label": "Comp558084", "shape": "dot", "size": 10}, {"id": "Comp226248$", "label": "Comp226248$", "shape": "dot", "size": 10}, {"id": "Comp226248", "label": "Comp226248", "shape": "dot", "size": 10}, {"id": "User679319", "label": "User679319", "shape": "dot", "size": 10}, {"id": "Comp330805", "label": "Comp330805", "shape": "dot", "size": 10}]);
+        edges = new vis.DataSet([{"from": "ActiveDirectory$", "to": "ActiveDirectory", "weight": 1}, {"from": "Comp380437$", "to": "Comp380437", "weight": 1}, {"from": "Scanner", "to": "Comp547538", "weight": 1}, {"from": "Scanner", "to": "Comp373203", "weight": 1}, {"from": "Scanner", "to": "Comp092787", "weight": 1}, {"from": "Scanner", "to": "Comp343469", "weight": 1}, {"from": "Scanner", "to": "Comp363531", "weight": 1}, {"from": "Scanner", "to": "Comp335697", "weight": 1}, {"from": "Scanner", "to": "Comp770200", "weight": 1}, {"from": "Scanner", "to": "Comp828729", "weight": 1}, {"from": "Scanner", "to": "Comp247594", "weight": 1}, {"from": "Scanner", "to": "Comp026764", "weight": 1}, {"from": "Scanner", "to": "Comp712916", "weight": 1}, {"from": "Scanner", "to": "Comp763248", "weight": 1}, {"from": "Scanner", "to": "Comp393623", "weight": 1}, {"from": "Scanner", "to": "Comp616708", "weight": 1}, {"from": "Scanner", "to": "Comp065123", "weight": 1}, {"from": "Scanner", "to": "Comp300961", "weight": 1}, {"from": "Scanner", "to": "Comp675476", "weight": 1}, {"from": "Scanner", "to": "Comp111330", "weight": 1}, {"from": "Scanner", "to": "Comp184217", "weight": 1}, {"from": "Scanner", "to": "Comp894088", "weight": 1}, {"from": "Scanner", "to": "Comp531828", "weight": 1}, {"from": "Scanner", "to": "Comp013303", "weight": 1}, {"from": "Scanner", "to": "Comp035876", "weight": 1}, {"from": "Scanner", "to": "Comp975290", "weight": 1}, {"from": "Scanner", "to": "Comp050867", "weight": 1}, {"from": "Scanner", "to": "Comp185517", "weight": 1}, {"from": "Scanner", "to": "Comp328892", "weight": 1}, {"from": "Scanner", "to": "Comp881419", "weight": 1}, {"from": "Scanner", "to": "Comp546437", "weight": 1}, {"from": "Scanner", "to": "Comp743956", "weight": 1}, {"from": "Comp948451$", "to": "Comp948451", "weight": 1}, {"from": "Comp016588$", "to": "Comp016588", "weight": 1}, {"from": "Comp674825$", "to": "Comp674825", "weight": 1}, {"from": "EnterpriseAppServer$", "to": "EnterpriseAppServer", "weight": 1}, {"from": "EnterpriseAppServer", "to": "User703614", "weight": 1}, {"from": "Comp094128$", "to": "Comp094128", "weight": 1}, {"from": "User046687", "to": "Comp881419", "weight": 1}, {"from": "Comp217088$", "to": "Comp217088", "weight": 1}, {"from": "Comp357095$", "to": "Comp357095", "weight": 1}, {"from": "Comp027709$", "to": "Comp027709", "weight": 1}, {"from": "Comp819652$", "to": "Comp819652", "weight": 1}, {"from": "Comp218986$", "to": "Comp218986", "weight": 1}, {"from": "Comp343469", "to": "User181140", "weight": 1}, {"from": "Comp440193$", "to": "Comp440193", "weight": 1}, {"from": "Comp713504$", "to": "Comp713504", "weight": 1}, {"from": "User677416", "to": "Comp621735", "weight": 1}, {"from": "Comp621735", "to": "Comp621735$", "weight": 1}, {"from": "Administrator", "to": "Comp402465", "weight": 1}, {"from": "Administrator", "to": "Comp925126", "weight": 1}, {"from": "Administrator", "to": "Comp395935", "weight": 1}, {"from": "Administrator", "to": "Comp972924", "weight": 1}, {"from": "Comp903988$", "to": "Comp903988", "weight": 1}, {"from": "Comp897367$", "to": "Comp897367", "weight": 1}, {"from": "Comp287981$", "to": "Comp287981", "weight": 1}, {"from": "Comp943585$", "to": "Comp943585", "weight": 1}, {"from": "Comp755918$", "to": "Comp755918", "weight": 1}, {"from": "Comp304440$", "to": "Comp304440", "weight": 1}, {"from": "Comp747460$", "to": "Comp747460", "weight": 1}, {"from": "User180900", "to": "Comp662721", "weight": 1}, {"from": "User686873", "to": "Comp355169", "weight": 1}, {"from": "User765669", "to": "Comp277495", "weight": 1}, {"from": "Comp708646$", "to": "Comp708646", "weight": 1}, {"from": "User414014", "to": "Comp496677", "weight": 1}, {"from": "Comp769474$", "to": "Comp769474", "weight": 1}, {"from": "Comp023513$", "to": "Comp023513", "weight": 1}, {"from": "Comp358834$", "to": "Comp358834", "weight": 1}, {"from": "Comp285326$", "to": "Comp285326", "weight": 1}, {"from": "User924479", "to": "Comp536810", "weight": 1}, {"from": "Comp615189$", "to": "Comp615189", "weight": 1}, {"from": "User684358", "to": "Comp559861", "weight": 1}, {"from": "User684358", "to": "Comp201491", "weight": 1}, {"from": "Comp503376$", "to": "Comp503376", "weight": 1}, {"from": "User011772", "to": "Comp055001", "weight": 1}, {"from": "Comp633715$", "to": "Comp633715", "weight": 1}, {"from": "Comp558084$", "to": "Comp558084", "weight": 1}, {"from": "Comp226248$", "to": "Comp226248", "weight": 1}, {"from": "User679319", "to": "Comp330805", "weight": 1}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": true,
+        "filter": [
+            "physics"
+        ]
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": false,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+        // if this network requires displaying the configure window,
+        // put it in its div
+        options.configure["container"] = document.getElementById("config");
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
