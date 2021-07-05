@@ -8,6 +8,7 @@ bin-release/
 .settings/
 .ipynb_checkpoints
 .ipynb_checkpoints/
+dask-worker-space/
 
 # Executables
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
