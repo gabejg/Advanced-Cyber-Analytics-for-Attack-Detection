@@ -10,6 +10,7 @@ bin-release/
 .ipynb_checkpoints/
 dask-worker-space/
 __pycache__/
+.DS_Store
 
 # Executables
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
