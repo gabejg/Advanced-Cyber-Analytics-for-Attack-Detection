@@ -1,3 +1,6 @@
+import pandas as pd
+from dt import *
+
 def process_import():
     try:
         print("Looking for local copy of Process data...")

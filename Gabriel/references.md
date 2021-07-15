@@ -11,3 +11,5 @@
 [Seaborn Boxplot](https://pythonbasics.org/seaborn-boxplot/)
 
 [Network analysis python](https://towardsdatascience.com/getting-started-with-graph-analysis-in-python-with-pandas-and-networkx-5e2d2f82f18e)
+
+[Dropping based on in or not in pandas](https://stackoverflow.com/questions/27965295/dropping-rows-from-dataframe-based-on-a-not-in-condition)
