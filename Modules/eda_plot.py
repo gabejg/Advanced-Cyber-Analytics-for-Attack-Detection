@@ -1,8 +1,11 @@
+import sys
+sys.path.insert(0,'G:/Users/Gabriel/Documents/Education/UoB/GitHubDesktop/Advanced-Cyber-Analytics-for-Attack-Detection/Modules/')
 import matplotlib.pyplot as plt
 import squarify
 import networkx as nx
 from pyvis.network import Network
 from random import randint
+from dt import *
 
 def square_plot(var,hed,fsize):
     dtn()
