@@ -11,6 +11,7 @@ bin-release/
 dask-worker-space/
 __pycache__/
 .DS_Store
+proc_data_reduced.csv.gz
 
 # Executables
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
