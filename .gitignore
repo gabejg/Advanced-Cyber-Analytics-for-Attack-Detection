@@ -12,7 +12,18 @@ dask-worker-space/
 __pycache__/
 .DS_Store
 proc_data_reduced.csv.gz
+<<<<<<< Updated upstream
 AuthScores.zip
+=======
+LosAlamos.zip
+BusyDaysCon_Auth.zip
+Authentication data.gz
+Process data.gz
+Authentication Weighted Degree Days.gz
+AuthScores.zip
+auth_data_reduced.csv.gz
+dns.txt.gz
+>>>>>>> Stashed changes
 
 # Executables
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
