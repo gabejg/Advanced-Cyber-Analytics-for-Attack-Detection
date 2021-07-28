@@ -12,6 +12,7 @@ dask-worker-space/
 __pycache__/
 .DS_Store
 proc_data_reduced.csv.gz
+AuthScores.zip
 
 # Executables
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
