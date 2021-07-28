@@ -1,0 +1,6 @@
+Data/Authentication data.gz
+Data/BusyDaysCon_Auth.zip
+Data/LosAlamos.zip
+Data/Process data.gz
+Data/Reduced/auth_data_reduced.csv.gz
+Matt/Authentication Weighted Degree Days.gz
