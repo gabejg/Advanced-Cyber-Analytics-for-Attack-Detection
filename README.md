@@ -19,26 +19,23 @@ The brief we were supplied with for our project is as follows:
 This project aims at investigating, building and applying (advanced) detection algorithms for threat detection i.e. cyber analytics. This might include use of AI/ML techniques. Identify and use cyber data sets accessible online. Use MITRE ATT\&CK information about TTPs, analytics and data types as guidance. Investigate use of public TI feeds to improve threat \& attack detection accuracy and reduce false positives. Discuss outcomes. Specifically, the project proposal consists of two parts:
 
 Part 1: Set the context. Identify potential cyber analytic algorithms for threat detection along with suitable public data sets:
-\begin{itemize}
-    \item Use MITRE ATT\&CK (https://attack.mitre.org/) as a reference to explore attackers’ TTPs, detective analytics and required data sets.
+* Use MITRE ATT\&CK (https://attack.mitre.org/) as a reference to explore attackers’ TTPs, detective analytics and required data sets.
     
-    \item Identify suitable public data sets to support cyber (detective) analytics of relevance (e.g. \href{https://github.com/shramos/Awesome-CybersecurityDatasets}{https://github.com/shramos/Awesome- CybersecurityDatasets}, \href{https://vizsec.org/data/}{https://vizsec.org/data/}, \href{https://www.impactcybertrust.org/search?filter[]=Prov\%3AExternal+Data+Sour}{https://www.impactcybertrust.org}, etc.)
+* Identify suitable public data sets to support cyber (detective) analytics of relevance (e.g. \href{https://github.com/shramos/Awesome-CybersecurityDatasets}{https://github.com/shramos/Awesome- CybersecurityDatasets}, \href{https://vizsec.org/data/}{https://vizsec.org/data/}, \href{https://www.impactcybertrust.org/search?filter[]=Prov\%3AExternal+Data+Sour}{https://www.impactcybertrust.org}, etc.)
     
-    \item Identify suitable OSINT data repositories and feeds (e.g.\href{https://logz.io/blog/open-source-threat-intelligence-feeds/}{https://logz.io/blog/open-source-threat-intelligence-feeds/}, \href{https://www.senki.org/operators-security-toolkit/open-source-threatintelligence-feeds/}{https://www.senki.org/operators-security-toolkit/open-source-threatintelligence-feeds/}, \href{https://www.misp-project.org/feeds/}{https://www.misp-project.org/feeds/}, etc.);
+* Identify suitable OSINT data repositories and feeds (e.g.\href{https://logz.io/blog/open-source-threat-intelligence-feeds/}{https://logz.io/blog/open-source-threat-intelligence-feeds/}, \href{https://www.senki.org/operators-security-toolkit/open-source-threatintelligence-feeds/}{https://www.senki.org/operators-security-toolkit/open-source-threatintelligence-feeds/}, \href{https://www.misp-project.org/feeds/}{https://www.misp-project.org/feeds/}, etc.);
     
-    \item Shortlist a set of TTPs and types of cyber attacks to focus on, based on available data sets.
-    
-    \item Identify suitable set of cyber detection algorithms and techniques (e.g. based on rules, behaviour analytics, advanced AI/ML, etc.) driven by available data and previous steps.
-\end{itemize}
+* Shortlist a set of TTPs and types of cyber attacks to focus on, based on available data sets.
+
+* Identify suitable set of cyber detection algorithms and techniques (e.g. based on rules, behaviour analytics, advanced AI/ML, etc.) driven by available data and previous steps.
 
 Outcome: Written Report documenting findings and decisions
 
 Part 2: R\&D practical Lab work, consisting of building, experimenting and refining a set of cyber analytics for threat detections, based on selected attackers’ TTPs and identified data sets. This R\&D work would include:
 
-\begin{itemize}
-    \item Build cyber threat analytics (models and detectors) by using available data sets and targeted attackers’ TTPs. Potentially consider different analytical techniques for the same TTP (for comparative assessment), if supported by available data;
-    \item Experiment with the built cyber analytics and review outcomes i.e. detective accuracy, impact of using related OSINT to improve true positive detection, etc;
-    \item Iteratively refine and improve these cyber analytics and/or introduce new algorithms or variants, driven by available data and experimental outcomes. Summarise and present cyber detection results (e.g. with attack timelines, graphs showing attack dependencies, etc.).
-\end{itemize}
+
+* Build cyber threat analytics (models and detectors) by using available data sets and targeted attackers’ TTPs. Potentially consider different analytical techniques for the same TTP (for comparative assessment), if supported by available data;
+* Experiment with the built cyber analytics and review outcomes i.e. detective accuracy, impact of using related OSINT to improve true positive detection, etc;
+* Iteratively refine and improve these cyber analytics and/or introduce new algorithms or variants, driven by available data and experimental outcomes. Summarise and present cyber detection results (e.g. with attack timelines, graphs showing attack dependencies, etc.).
 
 Outcome: Cyber Analytics Prototypes and Written Report with findings
