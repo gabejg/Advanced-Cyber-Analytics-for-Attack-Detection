@@ -1,3 +1,5 @@
+# ReadMe file for Gabriel's Folder
+
 All documents, present in either the main folder as such or in corresponding subfolders contribute towards the 'Advanced Cyber Analytics for Anomaly Detection' project and are exclusively the work of named contributor and his project colleagues. All extra material is adequately referenced and documented within these documents, wherever relevant. 
 
 The files can be understood as independent works for the most part, but they are grouped based on the stages of the project they were used in. All files are meant to be read in the order indicated numerically within their folders, e.g. 1 - X, 2 - Y etc. The chronological (and advised) reading order for the folders is as follows:
@@ -12,7 +14,7 @@ This folder is where I have stored references, used packages and other small tes
 This subfolder is dedicated to the start of the project attempts at deciding between the two types of datasets provided by Los Alamos National Laboratory: The 'ATI dataset' consisting of Authentications and Processes that the team ended up working on, or the 'Netflow dataset' consisting of ~ 1TB of unfiltered traffic over the course of 90 days. The folder addresses all the issues that rose in this process and why we therefore decided to work with the ATI dataset instead.
     
 
-[## 02. Folder: 'EDA']()
+## 02. Folder: ['EDA'](https://github.com/Galeforse/Advanced-Cyber-Analytics-for-Attack-Detection/tree/main/Gabriel/02%20-%20EDA)
 
 This subfolder marks the first relevant contact with the dataset we worked with - where we conducted Exploratory Data Analysis. It contains elements such as: data cleaning, visual analysis on the Authentications, graphing and networking techniques.
     
