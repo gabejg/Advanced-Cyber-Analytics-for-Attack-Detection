@@ -5,6 +5,7 @@ bin-release/
 [Bb]in/
 
 # Other files and folders
+
 .settings/
 .ipynb_checkpoints
 .ipynb_checkpoints/
@@ -16,5 +17,6 @@ __pycache__/
 # Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
+
 Data/Reduced/auth_data_reduced_mk2.csv.gz
 Data/Reduced/proc_data_reduced.csv.gz
