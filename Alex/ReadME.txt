@@ -15,4 +15,14 @@ The files can be understood as independent works for the most part, but they are
 
 2. Folder: 'Exploratory Data Analysis'
 
-    This subfolder marks the first relevant contact with the dataset we worked with. It contains elements such as: data cleaning, visual analysis on the Authentications, graphing and networking techniques, analysis of the initial results and links to the next stage of the project.
+    This subfolder marks the first relevant contact with the dataset we worked with. It contains elements such as: data cleaning, visual analysis on the Authentications, graphing and networking techniques, analysis of the initial results and links to the next stage of the project. This folder is crucial for further reference, as results drawn from the initial steps described within the corresponding files are later cited in the third and fourth folders. 
+    
+
+3. Folder: 'Anomaly Detection'
+
+    This subfolder contains all my contribution towards performing the anomaly detection stage of the project. This task was mainly distributed among two other contributors, and hence the core of our team's anomaly scores and, detection attempts as well as the final set of anomalies identified can be found in their respective folders, and in the common 'Data' folder respectively. However, files from this subfolder have been used in the initial stages of anomaly detection, as well as towards the verification and validation of final results. The 'Comparing usernames' file contains an analysis done prior to any model or technique implementation, which then helped structure an anomaly detection method. Similarly, the 'Decision tree' was then used for estimating the FPR-rates of our results. 
+
+
+4. Folder: 'Kill Chain'
+
+    This subfolder contains my contribution towards the most substantial and novel results of our inquiry. I, along with a colleague, were mainly tasked with researching, defining, devising the model for and implementing the Kill Chain (while our colleagues were working on anomaly detection techniques). Therefore, this folder contains most of the work done towards the final set goal of the project: classifying anomalies into Kill Chain stages. The files represent, in consecutive order, the work done towards achieving that goal. The stages of the Kill Chain our team has established working with can be found in the 'Kill Chain research' file.
