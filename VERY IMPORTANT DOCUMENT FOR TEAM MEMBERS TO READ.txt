@@ -1,7 +1,0 @@
-GitHub LFS is the biggest pain in the bum I think I've used all year in some ways;
-
-And I say that after the PySpark fiasco...
-
-Anyway should be fixed now, if we run into more storage problems hmu
-
---Gabe
