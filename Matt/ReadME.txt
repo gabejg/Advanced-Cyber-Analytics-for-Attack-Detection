@@ -5,24 +5,18 @@ The files can be understood as independent works for the most part, but they are
 
 0. Folder: 'Early Project Works' [OPTIONAL]
 
-    This subfolder has been left in mostly for record keeping. It contains NO FILES THAT WERE LATER DIRECTLY USED TOWARDS THE PROJECT. However, it does contain methods, algorithms, structures or other types of investigations that were deemed relevant enough towards the project itself to be kept. Particularly, the 'WaterTreatment' files reference a very early dataset that was proposed as the main source of investigation for the project. Likewise, 'Alerts.csv' contains another such dataset, one that was considered a bit later in the stages of project preparation for its notable affiliation to papers investigating Kill-Chain linkage to cyberattacks. There is no advised reading order for this folder.
-    
+    This folder is leftover from work conducted before the commencement of the project - it references investiations conducted into other data sets and techniques and does not form an essential part of the project. The initial research document presents ideas on other data sets we considered while the IF Analysis is a brief look into the usability of Isolation Forests.
+      
 
-1. Folder: 'NetFlow'
-
-    This subfolder is dedicated to the start of the project attempts at deciding between the two types of datasets provided by Los Alamos National Laboratory: The 'ATI dataset' consisting of Authentications and Processes that the team ended up working on, or the 'Netflow dataset' consisting of ~ 1TB of unfiltered traffic over the course of 90 days. The folder addresses all the issues that rose in this process and why we therefore decided to work with the ATI dataset instead.
-    
-
-2. Folder: 'Exploratory Data Analysis'
-
-    This subfolder marks the first relevant contact with the dataset we worked with. It contains elements such as: data cleaning, visual analysis on the Authentications, graphing and networking techniques, analysis of the initial results and links to the next stage of the project. This folder is crucial for further reference, as results drawn from the initial steps described within the corresponding files are later cited in the third and fourth folders. 
+1. Folder: 'EDA'
+    This folder contains the early investigations into the LANL dataset. It contains visualisations of process networks and investigation into features in the authentication data set. In the data reading techniques subfolder, we investigate data reading techniques for the WLS documents and look briefly at streaming techniques. This folder is crucial for further reference, as results drawn from the initial steps described within the corresponding files are later used in the second and third folders. 
     
 
 3. Folder: 'Anomaly Detection'
 
-    This subfolder contains all my contribution towards performing the anomaly detection stage of the project. This task was mainly distributed among two other contributors, and hence the core of our team's anomaly scores and, detection attempts as well as the final set of anomalies identified can be found in their respective folders, and in the common 'Data' folder respectively. However, files from this subfolder have been used in the initial stages of anomaly detection, as well as towards the verification and validation of final results. The 'Comparing usernames' file contains an analysis done prior to any model or technique implementation, which then helped structure an anomaly detection method. Similarly, the 'Decision tree' was then used for estimating the FPR-rates of our results. 
+    This subfolder contains all of my contribution towards performing the anomaly detection stage of the project. This folder forms the bulk of our enquiry into anomaly detection. The initial AD document discusses the early attempts we made including many which do not feature in the final report including HTM Studio, CP APR and Bipartite AD. The results from this are contained in the corresponding subfolder and demonstrate the usability of these techniques. The final anomaly detection folder contains the notebook that implements the final anomaly detection techniques used in this project along with an analysis of the results. The results are also given in this folder for ease of access.
 
 
 4. Folder: 'Kill Chain'
 
-    This subfolder contains my contribution towards the most substantial and novel results of our inquiry. I, along with a colleague, were mainly tasked with researching, defining, devising the model for and implementing the Kill Chain (while our colleagues were working on anomaly detection techniques). Therefore, this folder contains most of the work done towards the final set goal of the project: classifying anomalies into Kill Chain stages. The files represent, in consecutive order, the work done towards achieving that goal. The stages of the Kill Chain our team has established working with can be found in the 'Kill Chain research' file.
+    
