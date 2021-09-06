@@ -1,0 +1,38 @@
+		Agenda for 30th July meeting
+
+1. Introduction -  This section covers where we stand at the moment in terms of the original planning, 
+as well as what the main focus of the week has been.
+
+2. Project members input:
+    2.1 Alex 
+    2.2 Gab
+    2.3 Luke
+    2.4 Matt 
+
+3. Next week's overview - In this section we discuss what the main plan
+for next week is, based on where we stand now. Here we aim to establish, 
+to some degree of precision, the steps we'll be taking in the upcoming week 
+both as a group and in terms of individual contribution.
+Having entered the second half of our project, in this section we may also choose to address 
+changes of directive for our project's goal, subject to the conclusions drawn from the previous
+two sections.
+
+4. Actions - This section covers any proposed actions/directions to take 
+apart from the immediate project plan. This may include, but isn't limited to:
+roles assignment, change of roles, change of tasks, personal engagements for the week, 
+changes in platforms (eg if members need to use a 3rd party program) etc.
+
+5. Other issues - This section covers anything else that needs saying
+
+6. Concluding statements and thanks.
+
+
+
+UPDATES: As per point 3 of the agenda, with implicit discussions extending to sections 1 and 2, 
+the following schedule changes have been put in place, effective immediately:
+
+Week 1: 2nd August - 6th August : Implementing AD | Research the KC
+Week 2: 9th August - 13th August: Finishing AD | Finding KC algorithm 
+Week 3: 16th August - 20th August: Finding KC algorithm & Implementing KC algorithm
+Week 4: 23rd August - 27th August: Finishing Week 3 work
+Week 5: 30th August - 3rd September: Organize all remaining work 

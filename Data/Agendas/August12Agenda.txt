@@ -1,0 +1,59 @@
+Agenda for 12th August meeting
+
+Note: In view of the upcoming draft submission deadline on Friday 13th, the team unanimously decided to
+move the usual Friday meeting to Thursday, 1 day before the normal schedule. 
+
+1. Introduction -  This section covers where we stand at the moment in terms of the updated planning, 
+as well as what the main focus of the week has been. The original planning has been abandoned as of 
+2nd of August. The entire scope of current planning can be found at the bottom of this agenda.
+
+2. Project members input:
+    2.1 Alex  ] Team B*
+    2.2 Luke  ] Team B*
+    2.3 Gab   ] Team A*
+    2.4 Matt  ] Team A*
+
+* As per the planning, tasks have been equally split into two teams consisting of two members each:
+team A and team B respectively.
+
+3. Draft submission - This section exists for this meeting only. Here we aim to cover all preparatory
+stages with regards to submitting the project draft, such as, but not only: Work ordering, annotations,
+technical write-up, visualisations, links and references, keypoints, spell checks and writing coherence.
+The matters will be addressed in the following order:
+
+	3.1 The entire panel ->   [Mutual contributions such as write-up: current state, coherence, visualisations, grammar etc.]
+
+	3.2 Alex  ->
+	3.3 Gab   ->	Work order, coherence, spell-check, annotations, links and references,	
+	3.4 Luke  ->	correlation to other's works, emphasis and overall structure. * 
+	3.5 Matt  ->
+
+* Note: All points are meant to be taken as suggestions. They're indicative of what ought to be discussed,
+though some other unmentioned points may arise as well as some of the mentioned points may be discarded.
+
+4. Next week's overview - In this section we discuss what the main plan
+for next week is, based on where we stand now. Here we aim to establish, 
+to some degree of precision, the steps we'll be taking in the upcoming week 
+both as a group, as teams, and in terms of individual contribution.
+
+5. Actions - This section covers any proposed actions/directions to take 
+apart from the immediate project plan. This may include, but isn't limited to:
+roles assignment, change of roles, change of tasks, personal engagements for the week, 
+changes in platforms (eg if members need to use a 3rd party program) etc. *
+
+6. Other issues - This section covers anything else that needs saying.
+
+7. Concluding statements and thanks.
+
+
+
+
+Note: Weeks with dual tasks are to be interpreted as Team A's tasks on the left side, and
+Team B's tasks on the right side. When teams are working on separate issues, it is denoted by
+Team A | Team B. When working together, it is denoted as either Team A & Team B or no explicit dual tasks formula.
+
+Week 1: 2nd August - 6th August : Implementing AD | Research the KC
+Week 2: 9th August - 13th August: Finishing AD | Finding KC algorithm 
+Week 3: 16th August - 20th August: Finding KC algorithm & Implementing KC algorithm
+Week 4: 23rd August - 27th August: Finishing Week 3 work
+Week 5: 30th August - 3rd September: Organize all remaining work 

@@ -1,0 +1,39 @@
+Agenda for 20th August meeting
+
+
+1. Introduction -  This section covers where we stand at the moment in terms of the updated planning, 
+as well as what the main focus of the week has been. The original planning has been abandoned as of 
+2nd of August. The entire scope of current planning can be found at the bottom of this agenda.
+
+2. Project members input:
+    2.1 Alex
+    2.2 Gab
+    2.3 Matt *
+		
+* Luke will not be present for this meeting.
+
+3. Next week's overview - In this section we discuss what the main plan
+for next week is, based on where we stand now. Here we aim to establish, 
+to some degree of precision, the steps we'll be taking in the upcoming week 
+both as a group, and in terms of individual contribution.
+Following the first draft submission, in this section we will also tackle our 
+current progress on improvements and modifications to the project write-up.
+
+4. Actions - This section covers any proposed actions/directions to take 
+apart from the immediate project plan. This may include, but isn't limited to:
+roles assignment, change of roles, change of tasks, personal engagements for the week, 
+changes in platforms (eg if members need to use a 3rd party program) etc. *
+
+5. Other issues - This section covers anything else that needs saying.
+
+6. Concluding statements and thanks.
+
+
+Note: The split-teams format is no longer in our schedule. Unless following an update of the
+current planning, this format is not expected to return. This note will be dismissed in consequent agendas.
+
+Week 1: 2nd August - 6th August : Implementing AD | Research the KC
+Week 2: 9th August - 13th August: Finishing AD | Finding KC algorithm 
+Week 3: 16th August - 20th August: Finding KC algorithm & Implementing KC algorithm
+Week 4: 23rd August - 27th August: Finishing Week 3 work
+Week 5: 30th August - 3rd September: Organize all remaining work 

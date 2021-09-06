@@ -1,0 +1,35 @@
+Agenda for 27th August meeting
+
+
+1. Introduction -  This section covers where we stand at the moment in terms of the updated planning, 
+as well as what the main focus of the week has been. The original planning has been abandoned as of 
+2nd of August. The entire scope of current planning can be found at the bottom of this agenda.
+
+_Note: 'Project members input' section has been completely removed for the remaining meeting(s).
+'Next week's overview' section has been changed. 'Actions' section has been changed._
+
+2. Draft submission - This section is provisional for this week only. Here we aim to discuss
+the current state of our write-up, particularly which points from the list of changes have
+been crossed off and which haven't yet. Here we may also choose to discuss other
+suggestions regarding the write-up, as well as individual opinions on its current state.
+
+3. Next week's overview - In this section we discuss what the main plan
+for next week is, based on where we stand now. Reaching the end of our project, in this
+section we will mainly focus on criterias that haven't yet been met to ensure the process of
+finishing up goes as smoothly as possible, such as: annotations, work ordering, presentation, 
+visualisations, coherence, flow, grammar and crucially: state of the presentation. 
+
+4. Actions - This section mostly covers personal engagements for the upcoming week. Other
+actions may freely be brought up otherwise.
+
+5. Other issues - This section covers anything else that needs saying.
+
+6. Concluding statements and thanks.
+
+
+
+Week 1: 2nd August - 6th August : Implementing AD | Research the KC
+Week 2: 9th August - 13th August: Finishing AD | Finding KC algorithm 
+Week 3: 16th August - 20th August: Finding KC algorithm & Implementing KC algorithm
+Week 4: 23rd August - 27th August: Finishing Week 3 work
+Week 5: 30th August - 3rd September: Organize all remaining work 
